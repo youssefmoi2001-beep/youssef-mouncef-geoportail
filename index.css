@@ -148,6 +148,7 @@ height: 100vh;
     height: 30PX;
     border-radius: 4px;
 }
+
 #btncouche{
     position: absolute;
     right:10PX ;
@@ -161,7 +162,7 @@ height: 100vh;
 }
 
 
-/* Le conteneur du bouton */
+/*Le conteneur du bouton*/ 
 .leaflet-control-browser-print {
     background-color: #090976 !important;
     border-radius: 6px;         
@@ -169,7 +170,7 @@ height: 100vh;
     
 }
 
-/* Le texte du bouton */
+/* Le texte du bouton*/
 .leaflet-control-browser-print a {
                   
     font-weight: bold;
@@ -178,7 +179,27 @@ height: 100vh;
     background-color:  #090976 !important;
     border: none;
    
-}
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* legend syle*/
 .legend {
     position: absolute;
