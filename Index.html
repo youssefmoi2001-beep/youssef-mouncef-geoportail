@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    
+
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css">
+    <link rel="stylesheet" href="index.css">
+    <title>My Geoportail</title>
+</head>
+<body>
+    <!--navbare-->
+    <div class="navbarre">
+        
+        <h3>My GEOPORTAIL</h3>
+        <img src="https://tse3.mm.bing.net/th/id/OIP.sE5kZgictvcP9SKjJ0xy1wAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+    </div>
+
+
+    <!--content-->
+<div class="content">
+
+    <!--base map-->
+
+
+
+
+  <!-- map-->
+<div id="map">
+<div id="coordonne">---</div>
+<input type="button" value="fond de carte" id="btnbasemap">
+<input type="button" value="Decoupage Admiistrative" id="btncouche">
+<div class="legend">
+    <h5>Légende</h5>
+
+    <label class="legend-item">
+        <input type="radio" name="legend" id="orange">
+        <span class="color-box orange"></span>
+        Orange
+    </label>
+
+    <label class="legend-item">
+        <input type="radio" name="legend" id="green">
+        <span class="color-box green"></span>
+        Vert
+    </label>
+</div>
+
+
+   </div>
+
+
+</div>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
+    
+<script src="./LIB/leaflet.browser.print.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

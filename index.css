@@ -1,0 +1,250 @@
+*{
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+/*------------------ navbbare--------------------*/
+.navbarre {
+    width: 100%;
+    background-color: #090976;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    flex-wrap: wrap;  
+}
+
+/* Logo  image */
+.navbarre img {
+   height: 40px;
+}
+
+/* Titre */
+h3 {
+    margin: 0;
+    color: white;
+    flex: 1;
+    text-align: center;
+}
+
+
+
+
+/*---------------------conteent--------------------------*/
+.content{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.basemap{
+    width: 200PX;
+    background-color: #090976;
+    height: 100vh;
+
+    
+}
+#map{
+    width: 100%;
+height: 100vh;
+}
+
+
+
+
+/*BOUTTON*/
+.mon-style-personnalise{
+    color: #090976;
+    background-color: #090976;
+    border-radius: 10PX;
+    width: 200PX;
+    display: none;
+    
+}
+.leaflet-control-zoom {
+  border: none;
+  box-shadow: none;
+  background-color: #090976;
+  display: flex;
+  outline: none;
+  
+ 
+}
+
+.leaflet-control-zoom a {
+  background: #090976;
+  color: white;
+  font-size: 20px;
+   width: 200PX;
+  height: 40px;
+  line-height: 40px;
+}
+.leaflet-popup-content-wrapper {
+    background: #090976;       /* couleur fond */
+    color: white;              /* texte */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 8px;        /* coins arrondis */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+#coordonne {
+  position: absolute;
+  bottom: 40px;
+  left: 10px;
+  width: 200px;
+  background-color: #090976;
+  color: rgb(255, 250, 250);
+  padding: 6px 10px;
+  z-index: 1000;
+  font-size: 13px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+
+
+ 
+
+
+/* Supprimer le style vertical par défaut */
+.dessinbtn .leaflet-bar {
+    display: flex ;
+    border: none;
+}
+
+/* Style des boutons */
+.dessinbtn a {
+    background-color: #090976 !important;
+    color: white !important;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border: none;
+}
+
+/* Hover */
+.dessinbtn a:hover {
+    background-color: #1a1aa3 !important;
+}
+
+
+
+#btnbasemap{
+    position: absolute;
+    right:10PX ;
+    top: 10PX;
+    z-index: 1000;
+    background-color: #090976;
+    border: none;
+    width: 200PX;
+    height: 30PX;
+    border-radius: 4px;
+}
+#btncouche{
+    position: absolute;
+    right:10PX ;
+     top: 90PX;
+    background-color:   #090976;;
+    z-index: 1000;
+    border: none;
+    width: 200PX;
+    height: 30PX;
+    border-radius: 4px;
+}
+
+
+/* Le conteneur du bouton */
+.leaflet-control-browser-print {
+    background-color: #090976 !important;
+    border-radius: 6px;         
+  border: none;
+    
+}
+
+/* Le texte du bouton */
+.leaflet-control-browser-print a {
+                  
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    background-color:  #090976 !important;
+    border: none;
+   
+}
+/* legend syle*/
+.legend {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+
+    background:#090976;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.legend h5 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    color:white;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.legend-item input {
+    cursor: pointer;
+}
+
+.color-box {
+    width: 15px;
+    height: 15px;
+    border-radius: 4px;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.green {
+    background-color: green;
+}
+
+@media print {
+
+    .legend {
+        display: block !important;
+        position: absolute !important;
+        bottom: 20px !important;
+        right: 20px !important;
+        background: white !important;
+        padding: 10px !important;
+        z-index: 9999 !important;
+    }
+
+}
+
+
+
+
+
+
+
+ 
